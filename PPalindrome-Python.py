@@ -39,13 +39,13 @@ if __name__ == '__main__':
     # loop creating processing
     for i in range(n):
         p.append(Process(target=checkPalindrome, args=(i, array, palindromeArray, n)))
-    # take start time of the actually work
+    # take start time of the actual work
     function_start = time.time()
     # start and join each process
     for i in range(n):
         p[i].start()
         p[i].join()
-    # take start time of the actually work
+    # take start time of the actual work
     function_end = time.time()
     # take end time of program
     program_end = time.time()
